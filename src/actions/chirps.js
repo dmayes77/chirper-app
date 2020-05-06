@@ -1,8 +1,8 @@
-export const RECEIVE_TWEETS = 'RECIEVE_TWEETS';
+export const RECEIVE_CHIRPS = 'RECIEVE_CHIRPS';
 
-export const receiveTweets = tweets => {
+export const receiveChirps = chirps => {
 	return {
-		type: RECEIVE_TWEETS,
-		tweets,
+		type: RECEIVE_CHIRPS,
+		chirps,
 	};
 };
