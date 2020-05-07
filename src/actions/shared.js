@@ -6,7 +6,7 @@ import { receiveUsers } from './users';
 const AUTHED_ID = 'tylermcginnis';
 
 const handleInitialData = () => dispatch =>
-	getInitialData().then(({ users, tweets }) => {
+	getInitialData().then(({ users, chirps }) => {
 		dispatch(receiveUsers(users));
 		dispatch(receiveChirps(chirps));
 		dispatch(setAuthedUser(AUTHED_ID));
